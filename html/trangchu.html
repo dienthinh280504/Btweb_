@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ Bán Túi Xách</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/trangchu.css" />
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="banner">
+        <img width="100%" src="../img/Banner.Sale.img" alt="" />
+      </section>
+
+      <div class="container1 my-5 text-center">
+        <h1>Miễn phí giao hàng cho đơn hàng 500k</h1>
+        <h2>Chào Mừng Bạn Đến Với Cửa Hàng Của NDT Chuyên Về Túi Xách</h2>
+        <p>
+          Chúng tôi cung cấp các sản phẩm chất lượng cao với giá cả hợp lý. Khám
+          phá ngay bộ sưu tập đa dạng của chúng tôi!
+        </p>
+      </div>
+      <div class="row">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">TRANG CHỦ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/sanpham.html">TẤT CẢ SẢN PHẨM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../html/saleupto.html"
+              >SALE UP TO 70%</a
+            >
+          </li>
+          <li class="nav-item">
+            <!-- Liên kết Đăng Nhập -->
+            <a
+              class="nav-link"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              >ĐĂNG NHẬP</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#modalId"
+              >ĐĂNG KÍ</a
+            >
+          </li>
+        </ul>
+        <!-- Modal Đăng Nhập -->
+        <div
+          class="modal fade"
+          id="loginModal"
+          tabindex="-1"
+          aria-labelledby="loginModalTitle"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+          >
+            <div class="modal-content">
+              <!-- Phần đầu Modal -->
+              <div class="modal-header">
+                <h2 class="modal-title text-center w-100 fw-bold text-warning">
+                  Đăng Nhập
+                </h2>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <!-- Phần thân Modal với form đăng nhập -->
+              <div class="modal-body">
+                <form id="loginForm">
+                  <div class="mb-3">
+                    <label for="loginUsername" class="form-label"
+                      >Tài Khoản</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="loginUsername"
+                      placeholder="Tài khoản"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="loginPassword" class="form-label"
+                      >Mật khẩu</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="loginPassword"
+                      placeholder="Mật khẩu"
+                      required
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <!-- Phần chân Modal với các nút -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Thoát
+                </button>
+                <button type="submit" form="loginForm" class="btn btn-primary">
+                  Đăng Nhập
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="../js/trangchulogin.js"></script>
+        <!-- Image Grid Section -->
+        <div class="container mt-4">
+          <div class="row no-gutters">
+            <!-- Main Image (6 columns) -->
+            <div class="col-lg-6">
+              <div class="image-container main-image">
+                <img src="../img/banner1.img" alt="Hình Ảnh Chính" />
+              </div>
+            </div>
+            <!-- Smaller Images (6 columns) -->
+            <div class="col-lg-6">
+              <div class="row no-gutters">
+                <!-- Image 1 -->
+                <div class="col-6">
+                  <div class="image-container small-image">
+                    <img src="../img/banner2.img" alt="Hình Ảnh 1" />
+                  </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="col-6">
+                  <div class="image-container small-image">
+                    <img src="../img/banner3.img" alt="Hình Ảnh 2" />
+                  </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="col-6">
+                  <div class="image-container small-image">
+                    <img src="../img/banner4.img" alt="Hình Ảnh 3" />
+                  </div>
+                </div>
+                <!-- Image 4 -->
+                <div class="col-6">
+                  <div class="image-container small-image">
+                    <img src="../img/banner5.img" alt="Hình Ảnh 4" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/spm1.img"
+              class="card-img-top"
+              alt="Sản phẩm nổi bật"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sản phẩm nổi bật</h5>
+              <p class="card-text">
+                Sản phẩm này đang được yêu thích và bán chạy nhất hiện nay.
+              </p>
+              <a href="../html/chitietsp10.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/spm2.img"
+              class="card-img-top"
+              alt="Sản phẩm nổi bật"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sản phẩm nổi bật</h5>
+              <p class="card-text">
+                Sản phẩm này đang được yêu thích và bán chạy nhất hiện nay.
+              </p>
+              <a href="../html/chitietsp5.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/spm3.img"
+              class="card-img-top"
+              alt="Sản phẩm nổi bật"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sản phẩm nổi bật</h5>
+              <p class="card-text">
+                Sản phẩm này đang được yêu thích và bán chạy nhất hiện nay.
+              </p>
+              <a href="../html/chitietsp7.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div
+      class="modal fade"
+      id="modalId"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      role="dialog"
+      aria-labelledby="modalTitleId"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">Thông tin đăng ký</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="registerForm">
+              <div class="mb-3">
+                <label for="Name" class="form-label">Họ tên</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Name"
+                  id="Name"
+                  placeholder="Họ và tên"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Date" class="form-label">Ngày Sinh</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  name="Date"
+                  id="Date"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="Email"
+                  id="Email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Password" class="form-label">Mật khẩu</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="Password"
+                  id="Password"
+                  placeholder="Mật khẩu"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="ConfirmPassword" class="form-label"
+                  >Xác nhận mật khẩu</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  name="ConfirmPassword"
+                  id="ConfirmPassword"
+                  placeholder="Xác nhận mật khẩu"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <small id="helpId" class="form-text text-muted"
+                  >Đảm bảo rằng mật khẩu của bạn khớp.</small
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Thoát
+            </button>
+            <button type="submit" form="registerForm" class="btn btn-primary">
+              Đăng Ký
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add JavaScript to check if passwords match -->
+    <script>
+      document
+        .getElementById("registerForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          let password = document.getElementById("Password").value;
+          let confirmPassword =
+            document.getElementById("ConfirmPassword").value;
+
+          if (password !== confirmPassword) {
+            alert("Mật khẩu và xác nhận mật khẩu không khớp.");
+          } else {
+            // Submit the form or send the data
+            alert("Đăng ký thành công!");
+          }
+        });
+    </script>
+
+    <footer>
+      <div class="container">
+        <div class="row contact">
+          <div class="col-md-3">
+            <h4>Hỗ Trợ Khách Hàng</h4>
+            <ul>
+              <li>
+                <a href="">Chính Sách Vận Chuyển</a>
+              </li>
+              <li><a href="">Chính Sách Thanhh Toán</a></li>
+              <li>Chính Sách Đổi Trả Hoàn Tiền</li>
+              <li>Chính Sách Bảo Hành</li>
+              <li>Chính Sách Bảo Mật</li>
+              <li>Chính Sách Xử Lý Khiếu Nại</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Về Chúng Tôi</h4>
+            <ul>
+              <li>Giới Thiệu</li>
+              <li>Dịch Vụ Của AQ</li>
+              <li>Tuyển Dụng</li>
+              <li>Sơ Đồ Chỉ Đường</li>
+              <li>Báo Chí</li>
+              <li>Chăm Sóc Khách Hàng</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Hỗ Trợ Bán Hàng</h4>
+            <ul>
+              <li>Hỗ trợ bảo hành: 086868686</li>
+              <li>Tư vấn mua hàng: 086868686</li>
+              <li>Dich vụ bọc lại sofa: 086868686</li>
+              <li>Chính Sách Bảo Hành</li>
+              <li>Phản ánh thái độ phục vụ: 086868686</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Thành viên</h4>
+            <ul>
+              <li>Nguyễn Điền Thịnh - 22689661</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row address-store">
+          <div class="col-md-4">
+            <h4>
+              <i class="fa fa-map-marker mr-2" aria-hidden="true"></i> Cửa Hàng
+              Túi Xách NDT 1
+            </h4>
+            <ul>
+              <li>Địa chỉ: 86 đường Pastuer Q1 TP HỒ CHÍ MINH</li>
+              <li>Hotline: 086868686</li>
+              <li>Email: ndtstorebaglegit@vku.udn.vn</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>
+              <i class="fa fa-map-marker mr-2" aria-hidden="true"></i> Cửa Hàng
+              Túi Xách NDT 2
+            </h4>
+            <ul>
+              <li>Địa chỉ: 28 đường CMT8 Q3 TP HỒ CHÍ MINH</li>
+              <li>Hotline: 086868686</li>
+              <li>Email: ndtstorebaglegit@vku.udn.vn</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>
+              <i class="fa fa-map-marker mr-2" aria-hidden="true"></i> Cửa Hàng
+              Túi Xách NDT 3
+            </h4>
+            <ul>
+              <li>Địa chỉ: 123 đường Sư Vạn Hạnh Q10 TP Hồ Chí Minh</li>
+              <li>Hotline: 086868686</li>
+              <li>Email: ndtstorebaglegit@vku.udn.vn</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Thêm thư viện font-awesome để hiển thị icon mạng xã hội -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách sản phẩm</title>
+    <!-- Liên kết Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <script src="../boostrap/js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+  </head>
+  <style>
+    /* Customize dropdown appearance */
+
+    .search-dropdown {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+  </style>
+
+  <body>
+    <div class="container my-4">
+      <h1 class="text-center mb-5">Danh Sách Sản Phẩm</h1>
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-6">
+          <div class="dropdown">
+            <input
+              id="searchInput"
+              class="form-control"
+              type="search"
+              placeholder="Tìm kiếm sản phẩm..."
+              aria-label="Search"
+              onkeyup="showSuggestions()"
+            />
+            <div
+              id="suggestions"
+              class="dropdown-menu"
+              aria-labelledby="searchInput"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Sản phẩm 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/sp1/sp1.img"
+              class="card-img-top"
+              alt="Sản phẩm 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Túi Xách Phối Tay Cầm Xoắn</h5>
+              <p class="card-text">
+                Mô tả ngắn gọn về sản phẩm: Đây là một sản phẩm chất lượng.
+              </p>
+              <p class="card-text"><strong>Giá: 749.000₫</strong></p>
+              <label>Số lượng: </label>
+              <input
+                type="number"
+                id="productQuantity"
+                value="1"
+                min="1"
+                class="form-control w-25 mb-3"
+              />
+              <a
+                href="../html/giohang.html"
+                class="btn btn-primary"
+                onclick="addToCart(1, 'Túi Xách Phối Tay Cầm Xoắn', 749.000)"
+                >Thêm vào giỏ hàng</a
+              >
+              <a href="../html/chitietsp1.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/sp2/sp2.img"
+              class="card-img-top"
+              alt="Sản phẩm 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Túi Xách Trung Dạng Tote Form Mềm</h5>
+              <p class="card-text">
+                Mô tả ngắn gọn về sản phẩm: Sản phẩm này rất phổ biến.
+              </p>
+              <p class="card-text"><strong>Giá: 499.000₫</strong></p>
+              <label>Số lượng: </label>
+              <input
+                type="number"
+                id="productQuantity"
+                value="1"
+                min="1"
+                class="form-control w-25 mb-3"
+              />
+              <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+              <a href="../html/chitietsp2.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/sp3/sp3.img"
+              class="card-img-top"
+              alt="Sản phẩm 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Túi Xách Nhỏ Tay Cầm Trang Trí Khóa</h5>
+              <p class="card-text">
+                Mô tả ngắn gọn về sản phẩm: Đây là một sản phẩm bán chạy.
+              </p>
+              <p class="card-text"><strong>Giá: 799,000₫</strong></p>
+              <label>Số lượng: </label>
+              <input
+                type="number"
+                id="productQuantity"
+                value="1"
+                min="1"
+                class="form-control w-25 mb-3"
+              />
+              <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+              <a href="../html/chitietsp3.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/sp4/sp4.img"
+              class="card-img-top"
+              alt="Sản phẩm 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Túi Xách Trung Tote Phối Khoá Trang Trí
+              </h5>
+              <p class="card-text">
+                Mô tả ngắn gọn về sản phẩm: Sản phẩm này là sự kết hợp hoàn hảo
+                giữa thiết kế tinh tế và công năng tuyệt vời.
+              </p>
+              <p class="card-text"><strong>Giá: 800.000₫</strong></p>
+              <label>Số lượng: </label>
+              <input
+                type="number"
+                id="productQuantity"
+                value="1"
+                min="1"
+                class="form-control w-25 mb-3"
+              />
+              <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+              <a href="../html/chitietsp4.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/sp5/sp5.img"
+              class="card-img-top"
+              alt="Sản phẩm 5"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Túi Xách Nhỏ Hobo Đeo Vai Enchanted</h5>
+              <p class="card-text">
+                Mô tả ngắn gọn về sản phẩm: Một lựa chọn đáng tin cậy với chất
+                lượng cao và độ bền vượt trội.
+              </p>
+              <p class="card-text"><strong>Giá: 649.000₫</strong></p>
+              <label>Số lượng: </label>
+              <input
+                type="number"
+                id="productQuantity"
+                value="1"
+                min="1"
+                class="form-control w-25 mb-3"
+              />
+              <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+              <a href="../html/chitietsp5.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/sp6/sp6.img"
+              class="card-img-top"
+              alt="Sản phẩm 6"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Túi Xách Nhỏ Vanity Case</h5>
+              <p class="card-text">
+                Mô tả ngắn gọn về sản phẩm: Đây là một sản phẩm mang đến sự tiện
+                lợi và phong cách hiện đại cho cuộc sống của bạn.
+              </p>
+              <p class="card-text"><strong>Giá: 559.000₫</strong></p>
+              <label>Số lượng: </label>
+              <input
+                type="number"
+                id="productQuantity"
+                value="1"
+                min="1"
+                class="form-control w-25 mb-3"
+              />
+              <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+              <a href="../html/chitietsp6.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 7 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/sp7/sp7.img"
+              class="card-img-top"
+              alt="Sản phẩm 7"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Túi Xách Nhỏ Đan Lát Trang Trí Charm</h5>
+              <p class="card-text">
+                Mô tả ngắn gọn về sản phẩm: Đây là một sản phẩm này được thiết
+                kế để tạo nên trải nghiệm tuyệt vời mỗi ngày.
+              </p>
+              <p class="card-text"><strong>Giá: 679.000₫</strong></p>
+              <label>Số lượng: </label>
+              <input
+                type="number"
+                id="productQuantity"
+                value="1"
+                min="1"
+                class="form-control w-25 mb-3"
+              />
+              <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+              <a href="../html/chitietsp7.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 8 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/sp8/sp8.img"
+              class="card-img-top"
+              alt="Sản phẩm 8"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Túi Xách Nhỏ Đeo Vai Phối Khoá Xoay</h5>
+              <p class="card-text">
+                Mô tả ngắn gọn về sản phẩm: Với thiết kế đẳng cấp, sản phẩm này
+                sẽ là điểm nhấn cho không gian của bạn.
+              </p>
+              <p class="card-text"><strong>Giá: 979.000₫</strong></p>
+              <label>Số lượng: </label>
+              <input
+                type="number"
+                id="productQuantity"
+                value="1"
+                min="1"
+                class="form-control w-25 mb-3"
+              />
+              <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+              <a href="../html/chitietsp8.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 9 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/sp9/sp9.img"
+              class="card-img-top"
+              alt="Sản phẩm 9"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Túi Xách Nhỏ Bear Hug</h5>
+              <p class="card-text">
+                Mô tả ngắn gọn về sản phẩm: Tuyệt tác từ những chất liệu cao
+                cấp, phù hợp với mọi phong cách.
+              </p>
+              <p class="card-text"><strong>Giá: 859.000₫</strong></p>
+              <label>Số lượng: </label>
+              <input
+                type="number"
+                id="productQuantity"
+                value="1"
+                min="1"
+                class="form-control w-25 mb-3"
+              />
+              <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+              <a href="../html/chitietsp9.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 10 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/sp10/sp10.img"
+              class="card-img-top"
+              alt="Sản phẩm 10"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Túi Xách Nhỏ In Hoạ Tiết Chuyển Màu</h5>
+              <p class="card-text">
+                Mô tả ngắn gọn về sản phẩm: Không chỉ là một sản phẩm, đây là sự
+                lựa chọn hoàn hảo cho cuộc sống tiện nghi.
+              </p>
+              <p class="card-text"><strong>Giá: 689.000₫</strong></p>
+              <label>Số lượng: </label>
+              <input
+                type="number"
+                id="productQuantity"
+                value="1"
+                min="1"
+                class="form-control w-25 mb-3"
+              />
+              <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+              <a href="../html/chitietsp10.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 11 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/sp11/sp11.img"
+              class="card-img-top"
+              alt="Sản phẩm 11"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Túi Xách Nhỏ Top Handle Trang Trí Khoá</h5>
+              <p class="card-text">
+                Mô tả ngắn gọn về sản phẩm: Mang lại trải nghiệm hoàn hảo, sản
+                phẩm này luôn là lựa chọn hàng đầu của khách hàng.
+              </p>
+              <p class="card-text"><strong>Giá: 900.000₫</strong></p>
+              <label>Số lượng: </label>
+              <input
+                type="number"
+                id="productQuantity"
+                value="1"
+                min="1"
+                class="form-control w-25 mb-3"
+              />
+              <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+              <a href="../html/chitietsp11.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm 12 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="../img/sp12/sp12.img"
+              class="card-img-top"
+              alt="Sản phẩm 12"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Túi Xách Nhỏ Đeo Vai Radio</h5>
+              <p class="card-text">
+                Mô tả ngắn gọn về sản phẩm: Thiết kế hiện đại, dễ sử dụng và bền
+                bỉ theo thời gian.
+              </p>
+              <p class="card-text"><strong>Giá: 600.000₫</strong></p>
+              <label>Số lượng: </label>
+              <input
+                type="number"
+                id="productQuantity"
+                value="1"
+                min="1"
+                class="form-control w-25 mb-3"
+              />
+              <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+              <a href="../html/chitietsp12.html" class="btn btn-primary"
+                >Xem chi tiết</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Sample product list with IDs for linking
+      const products = [
+        {
+          id: 1,
+          name: "Túi Xách Phối Tay Cầm Xoắn",
+        },
+        {
+          id: 2,
+          name: "Túi Xách Trung Dạng Tote Form Mềm",
+        },
+        {
+          id: 3,
+          name: "Túi Xách Nhỏ Tay Cầm Trang Trí Khóa",
+        },
+        {
+          id: 4,
+          name: "Túi Xách Trung Tote Phối Khoá Trang Trí",
+        },
+        {
+          id: 5,
+          name: "Túi Xách Nhỏ Hobo Đeo Vai Enchanted",
+        },
+        {
+          id: 6,
+          name: "Túi Xách Nhỏ Vanity Case",
+        },
+        {
+          id: 7,
+          name: "Túi Xách Nhỏ Đan Lát Trang Trí Charm",
+        },
+        {
+          id: 8,
+          name: "Túi Xách Nhỏ Đeo Vai Phối Khoá Xoay",
+        },
+        {
+          id: 9,
+          name: "Túi Xách Nhỏ Bear Hug",
+        },
+        {
+          id: 10,
+          name: "Túi Xách Nhỏ In Hoạ Tiết Chuyển Màu",
+        },
+        {
+          id: 11,
+          name: "Túi Xách Nhỏ Top Handle Trang Trí Khoá",
+        },
+        {
+          id: 12,
+          name: "Túi Xách Nhỏ Đeo Vai Radio",
+        },
+      ];
+
+      function showSuggestions() {
+        const input = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+        const suggestions = document.getElementById("suggestions");
+
+        // Clear previous suggestions
+        suggestions.innerHTML = "";
+
+        if (input) {
+          const filteredProducts = products.filter((product) =>
+            product.name.toLowerCase().includes(input)
+          );
+
+          // Show filtered products in dropdown
+          filteredProducts.forEach((product) => {
+            const suggestionItem = document.createElement("a");
+            suggestionItem.className = "dropdown-item";
+            suggestionItem.href = `/product-details.html?id=${product.id}`; // Link to the product detail page
+            suggestionItem.textContent = product.name;
+            suggestions.appendChild(suggestionItem);
+          });
+
+          // Show dropdown if there are suggestions
+          suggestions.classList.add("show");
+        } else {
+          // Hide dropdown if input is empty
+          suggestions.classList.remove("show");
+        }
+      }
+
+      // Close dropdown if clicked outside
+      document.addEventListener("click", function (event) {
+        const searchBox = document.getElementById("searchInput");
+        const suggestions = document.getElementById("suggestions");
+
+        if (!searchBox.contains(event.target)) {
+          suggestions.classList.remove("show");
+        }
+      });
+    </script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="giohang.js"></script>
+    <footer class="bg-light text-dark pt-4">
+      <div class="container">
+        <div class="row">
+          <!-- Cột 1: Thông tin hỗ trợ khách hàng -->
+          <div class="col-md-4 mb-3">
+            <h5>Hỗ Trợ Khách Hàng</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-dark">Trung tâm trợ giúp</a></li>
+              <li><a href="#" class="text-dark">Câu hỏi thường gặp</a></li>
+              <li><a href="#" class="text-dark">Chính sách đổi trả</a></li>
+              <li><a href="#" class="text-dark">Chính sách bảo hành</a></li>
+              <li><a href="#" class="text-dark">Liên hệ hỗ trợ</a></li>
+            </ul>
+          </div>
+          <!-- Cột 2: Liên hệ -->
+          <div class="col-md-4 mb-3">
+            <h5>Liên Hệ</h5>
+            <p>Địa chỉ: 123 Đường ABC, Quận 1, TP. HCM</p>
+            <p>Điện thoại: (0123) 456-789</p>
+            <p>Email: hotro@cuahang.com</p>
+          </div>
+          <!-- Cột 3: Theo dõi chúng tôi -->
+          <div class="col-md-4 mb-3">
+            <h5>Theo Dõi Chúng Tôi</h5>
+            <a href="#" class="text-dark mr-3"
+              ><i class="fab fa-facebook"></i> Facebook</a
+            >
+            <a href="#" class="text-dark mr-3"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+            <a href="#" class="text-dark"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+            <p>22689661-Nguyễn Điền Thịnh</p>
+          </div>
+        </div>
+        <!-- Dòng chữ bản quyền -->
+        <div class="text-center py-3">
+          <p class="mb-0">
+            © 2024 Cửa Hàng Của Chúng Tôi. Mọi quyền được bảo lưu.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Thêm thư viện font-awesome để hiển thị icon mạng xã hội -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </body>
+</html>

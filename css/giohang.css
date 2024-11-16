@@ -1,0 +1,16 @@
+body {
+  background-color: #f8f9fa;
+  /* Màu nền sáng cho trang */
+}
+
+.notification {
+  margin-top: 50px;
+  /* Khoảng cách phía trên */
+  text-align: center;
+  /* Canh giữa chữ */
+}
+
+.btn-continue {
+  margin-top: 20px;
+  /* Khoảng cách phía trên cho nút */
+}

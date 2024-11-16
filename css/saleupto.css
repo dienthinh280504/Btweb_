@@ -1,0 +1,27 @@
+body {
+  background-color: #f8f9fa;
+  /* Màu nền sáng cho trang */
+}
+
+.hero {
+  background-size: cover;
+  /* Đảm bảo hình ảnh bao phủ toàn bộ khu vực */
+  background-color: lightcoral;
+  color: white;
+  /* Màu chữ trắng */
+  padding: 100px 20px;
+  /* Khoảng cách trên và dưới */
+  text-align: center;
+  /* Canh giữa chữ */
+}
+
+.btn-sale {
+  font-size: 20px;
+  /* Kích thước chữ cho nút */
+  padding: 10px 30px;
+  /* Khoảng cách bên trong cho nút */
+  background-color: #ff5733;
+  /* Màu nền cho nút */
+  color: white;
+  /* Màu chữ trắng */
+}
